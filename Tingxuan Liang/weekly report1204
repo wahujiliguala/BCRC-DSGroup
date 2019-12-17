@@ -1,3 +1,57 @@
+
+
+
+
+/*****************************Paper Reading Note***************************************/
+1.Feature diversity for fall detection and human indoor activities classification using radar systems
+Introduction：
+This paper presents preliminary analysis of radar signatures for fall detection and classification of human indoor activities
+to monitor the daily behaviour of individuals at risk of deteriorating physical or cognitive health.
+
+Contribution：
+1）the fundamental differences in mD signatures of walks towards and away from the radar system. These differences
+have been overlooked and not considered by any existing work in this field.
+2）the aim is to discern an unassisted walk from a walk with a cane, independent on how the cane is actually used
+3）introduces time-frequency and cadence-velocity analysis of back-scattered radar signals from walking humans. From the
+cadence-velocity representation features are extracted for classification of normal and cane-assisted walks
+4）Extract main feature from time-frequency and cadence-velocity analysis
+
+
+2.Learning Sleep Stages from Radio Signals: A Conditional Adversarial Architecture
+Introduction:
+We introduce a new predictive model that combines convolutional and recurrent neural networks to extract sleep-specific subjectinvariant
+features from RF signals and capture the temporal progression of sleep.
+
+Contribution:
+1) The model adapts a convolutional neural network (CNN) to extract stage-specific features from RF spectrograms, and couples it with a recurrent
+Learning Sleep Stages from Radio Signals: A Conditional Adversarial Architecture neural network (RNN) to capture the temporal dynamics of
+sleep stages.
+2) introduce a multi-domain adversarial model that achieves the above goal.It has three components: An encoder E, a label predictor
+F, and a source discriminator D. Our model is set up as a game, where the representation encoder plays a cooperative
+game with the label predictor to allow it to predict the correct labels using the encoded representation. The encoder
+also plays a minimax game against the source discriminaLearning Sleep Stages from Radio Signals: A Conditional Adversarial Architecture
+tor to prevent it from decoding the source label from the encoded representation.
+3)key characteristic is the conditioning of the source discriminator on the label distribution.
+This conditioning of the adversary allows the learned representation to correlate with the domains
+
+
+3.Robust RGB-D SLAM in Dynamic Environment Using Faster R-CNN
+This paper proposed a method which is used in dynamic environment. 
+We first check whether there are objects moving by the threshold which represents consistency of matching and identify every potential candidate of the dynamic object. 
+If the dynamic existence is confirmed, we compute the dynamic region and figure out the dynamic object efficiently. 
+Then we will cull the wrong data association in dynamic region and add more new data association we don’t have in static region.
+
+Contribution:
+1) Use Faster-RCNN to detect and identify the potential candidate of the dynamic object whose category will be labeled. 
+2) Distinguish the stationary from the dynamic environment and refine the data association by removing the mismatching related to the dynamics.
+It means that we project the feature points in the stationary region of the current frame k into the corresponding region of the keyframe h with the estimated camera pose T_(h,k). 
+Then they compute the similarity between these. If the J is over the threshold, they label the region of object as dynamic status from stationary status and update the data association by filtering out the data associations in the moving region. 
+Once the status is dynamic, there’s no chance for status to turn back. If the J is within the threshold, they label the region as stationary state and reserve previous data association.
+3) Estimate the camera pose with better data association and the optimization of the graph.
+4) With accurate pose estimation, they reconstruct the dynamic environment successfully.
+
+
+
 /*****************************20191204***************************************/
 Accomplishment：
 1. data collection from MMW in different situations
